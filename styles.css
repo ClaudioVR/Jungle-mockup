@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+/*	font-family: 'Archivo Black', sans-serif;*/
+}
+
+body {
+	background-color: #DEA92C;
+	margin: 0;
+}
+
+.wrapper {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
+nav {
+	text-align: center;
+	opacity: 0;
+	
+	animation-name: bar;
+	animation-duration: 1.5s;
+	animation-delay: 3.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	
+}
+
+
+.bar-container {
+	cursor: pointer;
+}
+
+.concerts h3 {
+	font-family: Arial;
+	margin-top: 80px;
+}
+
+.new-album {
+	opacity: 0;
+	position: relative;
+	width: 100%;
+	background: black;
+	color: white;
+	height: auto;
+	margin: 20px auto;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Archivo Black', sans-serif;
+	
+	animation-name: album;
+	animation-duration: 2.5s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+.new-album h1 {
+	margin-bottom: 0;
+	letter-spacing: -2px;
+}
+
+.new-album h3 {
+	margin-top: 5px;
+}
+
+.new-album p {
+	padding: 20px 15px;
+	border: 2px solid white;
+	margin: 20px 10px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.album-cover {
+	text-align: center;
+}
+
+.concerts	{
+	text-transform: uppercase;
+}
+
+.individual-concert {
+	border-top: 1px solid black;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.date {
+	margin-top: 10px;
+	margin-bottom: 3px;
+	font-family: Arial;
+}
+
+.venue {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-weight: 200;
+	font-family: Arial;
+}
+
+.city {
+	margin-top: 0;
+	margin-bottom: 20px;
+  font-family: Arial;
+}
+
+ .individual-concert a {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid black;
+/*	color: black; */
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 48%;
+	color: black;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: .875em;
+}
+
+.buy-tickets {
+	background: black;
+	color: #DEA92C !important;
+}
+
+footer {
+	height: 100px;
+	border-top: 1px solid black;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.social-media {
+	text-align: center;
+	font-size: 2em;
+	margin: auto;	
+	
+}
+
+.fa {
+	cursor: pointer;
+}
+
+.jungle-link {
+	color: black;
+}
+
+footer p{
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+
+/* @keyframes ----------------------------- */
+
+
+.logo {
+	position: relative;
+	top: 10px;
+	animation-name: logo;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes logo {
+	0% {
+		top: -1000px;
+	}
+	100% {
+		top: 10px;
+	}
+}
+
+@keyframes album {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes bar {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+/* ---Media query 592px-------------------------------------------------------- */
+/* ----------------------------------------------------------- */
