@@ -120,11 +120,20 @@ nav:hover .material-icons {
 	text-transform: uppercase;
 	font-family: 'Archivo Black', sans-serif;
 
-	animation-name: album;
-	animation-duration: 2.5s;
-	animation-delay: 3s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in-out;
+
+}
+
+.concerts {
+	opacity: 0;
+}
+
+.new-album,
+.concerts {
+		animation-name: intoView;
+		animation-duration: 2.5s;
+		animation-delay: 3s;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in-out;
 }
 
 .hdr {
@@ -255,7 +264,7 @@ footer p{
 	}
 }
 
-@keyframes album {
+@keyframes intoView {
 	0% {
 		opacity: 0;
 	}
